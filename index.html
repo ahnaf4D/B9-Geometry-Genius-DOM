@@ -54,7 +54,8 @@
                                 placeholder="width"><span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area : <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area : <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span>
+                            </p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -63,14 +64,25 @@
                 </div>
                 <!-- Parallelogram Card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/parallelogram.png"
-                            alt="Shoes" />
+                    <figure><img src="images/parallelogram.png" alt="Shoes" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Area (A) = b X h</p>
+                        <div class="flex">
+                            <!-- parallelogram base -->
+                            <input type="text" name="" id="base-value" class="w-24 text-2xl p-2 rounded-sm"
+                                placeholder="base"><span class="mr-4 ml-2">cm</span>
+                            <!-- Rectangle Width -->
+                            <input type="text" name="" id="height-value" class="w-24 text-2xl p-2 rounded-sm"
+                                placeholder="height"><span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area : <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full" onclick="parallelogramCalculation()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -109,6 +121,7 @@
     </main>
     <script src="./js/triangle-calculate.js"></script>
     <script src="./js/rectangle-area.js"></script>
+    <script src="./js/parallelogram-area.js"></script>
 </body>
 
 </html>
