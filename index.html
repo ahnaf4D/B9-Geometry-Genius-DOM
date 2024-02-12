@@ -78,24 +78,39 @@
                                 placeholder="height"><span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area : <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span>
+                            <p class="text-2xl">Area : <span id="parallelogram-area">0</span>
+                                <span>cm<sup>2</sup></span>
                             </p>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full" onclick="parallelogramCalculation()">Calculate</button>
+                            <button class="btn btn-primary w-full"
+                                onclick="parallelogramCalculation()">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- Triangle Card -->
+                <!-- Rhombus Card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" />
+                    <figure><img src="images/rhombus.png" alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                        <div class="flex">
+                            <!-- Dimension 1 -->
+                            <input type="text" name="" id="rhombus-value" class="w-24 text-2xl p-2 rounded-sm"
+                                placeholder="d1"><span class="mr-4 ml-2">cm</span>
+                            <!-- Dimension 2 -->
+                            <input type="text" name="" id="rhombus-value2" class="w-24 text-2xl p-2 rounded-sm"
+                                placeholder="d2"><span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area : <span id="rhombus-area">0</span>
+                                <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full"
+                                onclick="rhombusAreaCalculation()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -122,6 +137,7 @@
     <script src="./js/triangle-calculate.js"></script>
     <script src="./js/rectangle-area.js"></script>
     <script src="./js/parallelogram-area.js"></script>
+    <script src="./js/rhombus-area.js"></script>
 </body>
 
 </html>
