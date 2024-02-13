@@ -1,13 +1,16 @@
 function parallelogramCalculation() {
-    // const baseMainValue = document.getElementById('base-value');
-    // const baseValue = baseMainValue.value;
-    // const base = parseFloat(baseValue);
-    const base = getParallelogramBase();
-    console.log(base);
+    const base = getInputValueById('base-value');
+    const height = getInputValueById('height-value');
+    const area = base * height;
+    setInnerTextByID('parallelogram-area', area);
 }
-// function getParallelogramBase() {
-//     const baseInput = document.getElementById('base-value');
-//     const baseText = baseInput.value;
-//     const base = parseFloat(baseText);
-//     return base;
-// }
+function getInputValueById(inputFieldId) {
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueText = inputField.value;
+    const inputValue = parseFloat(inputValueText);
+    return inputValue;
+}
+function setInnerTextByID(elementID, area) {
+    elementID = document.getElementById(elementID);
+    elementID.innerText = area;
+}
